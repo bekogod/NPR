@@ -1,0 +1,94 @@
+{
+    "config": {
+        "fixedOrder": true
+    },
+    "prototypes": [
+        {
+            "name": "EmergCar",
+            "color": "Red",
+            "vehicleClass": "EmergencyVehicle",
+            "accel": 2.6,
+            "decel": 4.5,
+            "emergencyDecel": 6.0,
+            "length": 5.00,
+            "maxSpeed": "120 kmh",
+            "sigma": 0.5,
+            "tau": 1,
+            "speedFactor": 1.0,
+            "speedMode": "DEFAULT",
+            "laneChangeMode": "DEFAULT",
+            "applications": [
+                "pt.uminho.npr.EmergVehApp"
+            ]
+        },
+        {
+            "name": "CarApp",
+            "color": "Pink",
+            "accel": 2.6,
+            "decel": 4.5,
+            "length": 2.20,
+            "maxSpeed": "50 kmh",
+            "minGap": 2.5,
+            "sigma": 0.5,
+            "speedDeviation": 0.1,
+            "tau": 1,
+            "applications": [
+                "pt.uminho.npr.VehApp"
+            ]
+        },
+        {
+            "applications": [
+                "pt.uminho.npr.RSUApp"
+            ],
+            "name": "RSU"
+        }
+    ],
+    "servers": [
+        {
+            "name": "FOG",
+            "group": "FOG_SERVER",
+            "applications": [
+                "pt.uminho.npr.FOGApp"
+            ]
+        }
+    ],
+    "rsus": [
+        {
+            "position": {
+                "latitude": 52.644916,
+                "longitude": 13.475074
+            },
+            "name": "RSU"
+        }
+    ],
+    "vehicles": [
+        {
+            "startingTime": "1.0 s",
+            "targetFlow": 600,
+            "maxNumberVehicles": 2,
+            "pos": 20,
+            "route": "r_1",
+            "types": [
+                {
+                    "name": "CarApp",
+                    "group": "Cellular",
+                    "weight": 0.1
+                }
+            ]
+        },
+        {
+            "startingTime": "6.0 s",
+            "targetFlow": 600,
+            "maxNumberVehicles": 1,
+            "pos": 20,
+            "route": "r_0",
+            "types": [
+                {
+                    "name": "EmergCar",
+                    "group": "Cellular",
+                    "weight": 0.1
+                }
+            ]
+        }
+    ]
+}
