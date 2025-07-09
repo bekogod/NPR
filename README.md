@@ -24,7 +24,6 @@ The aim of this project is to design and simulate a **custom multihop forwarding
 - **Ad hoc Networking (V2X)** — Communication model for vehicles and RSUs.
 
 ## 📁 Project Structure
-
 ```
 
 .
