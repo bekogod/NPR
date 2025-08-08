@@ -14,7 +14,7 @@ The aim of this project is to design and simulate a **custom multihop forwarding
 - Creating a dynamic awareness map of neighboring vehicles,
 - Optimizing forwarding paths based on proximity and hop count,
 - Issuing real-time commands such as slow down, stop, or resume,
-- Reacting to emergency vehicles in traffic scenarios.
+- Reacting to emergency vehicles in traffic scenarios..
 
 ## 🔧 Technologies and Tools
 
